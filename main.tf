@@ -4,6 +4,7 @@ module "apache" {
   my_ip_with_cidr = var.my_ip_with_cidr
   instance_type   = var.instance_type
   server_name     = var.server_name
+  bucket          = var.bucket
 }
 
 output "public_ip" {
