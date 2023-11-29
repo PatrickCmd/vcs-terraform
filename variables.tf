@@ -16,3 +16,7 @@ variable "my_ip_with_cidr" {
   type        = string
   description = "My IP address with Cidr"
 }
+
+variable "bucket" {
+  type = string
+}
