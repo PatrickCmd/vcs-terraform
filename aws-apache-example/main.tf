@@ -106,7 +106,6 @@ resource "aws_s3_bucket" "bucket" {
   bucket = var.bucket
 }
 
-/*
 resource "terraform_data" "status" {
   provisioner "local-exec" {
     command = "aws ec2 wait instance-status-ok --instance-ids ${aws_instance.terraform_apache_demo_server.id} --region us-east-1"
@@ -114,4 +113,4 @@ resource "terraform_data" "status" {
   depends_on = [
     aws_instance.terraform_apache_demo_server
   ]
-}*/
+}
